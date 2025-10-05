@@ -6,15 +6,43 @@ const YoutubeIcon = ({ className = '' }: { className?: string }) => (
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#1e293b] text-white py-8">
-      <div className="container mx-auto px-6 text-center">
-        <p className="text-xl font-bold mb-4" style={{fontFamily: "'Baloo 2', cursive"}}>Acompanhe no YouTube!</p>
-        <div className="flex justify-center gap-8 mb-6">
-          <a href="#" className="text-red-500 hover:text-red-400 transition-colors transform hover:scale-110"><YoutubeIcon className="w-10 h-10" /></a>
+    <footer className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-12">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-8">
+          <div className="mb-4">
+            <span className="text-4xl">👧</span>
+            <span className="text-2xl ml-2 font-bold">📚 Aninha e suas Historinhas 🎬</span>
+          </div>
+          <p className="text-xl mb-6 font-semibold">
+            🌟 Diversão educativa para crianças de 3 a 6 anos! 🌟
+          </p>
+          <div className="bg-white/10 rounded-2xl p-6 mb-6 max-w-2xl mx-auto">
+            <p className="text-lg mb-4">
+              <strong>📱 Acompanhe nosso canal no YouTube!</strong>
+            </p>
+            <p className="text-md mb-4">
+              🎵 Músicas • 📖 Histórias • 🎨 Atividades • 🧠 Aprendizado
+            </p>
+            <div className="flex justify-center gap-4">
+              <a 
+                href="#" 
+                className="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-full transition-all transform hover:scale-110 flex items-center gap-2 font-bold"
+              >
+                <YoutubeIcon className="w-6 h-6" />
+                Se Inscrever
+              </a>
+            </div>
+          </div>
         </div>
-        <p className="text-slate-400 text-sm">
-          &copy; {new Date().getFullYear()} Aninha e suas historinhas. Todos os direitos reservados.
-        </p>
+        
+        <div className="border-t border-white/20 pt-6 text-center">
+          <p className="text-sm text-white/80">
+            &copy; {new Date().getFullYear()} Aninha e suas Historinhas. Feito com 💖 para crianças especiais.
+          </p>
+          <p className="text-xs text-white/60 mt-2">
+            ⚠️ Recomendado acompanhamento dos pais • Conteúdo educativo e seguro
+          </p>
+        </div>
       </div>
     </footer>
   );

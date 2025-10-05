@@ -14,17 +14,24 @@ const HeroSection: React.FC = () => {
         <CloudIcon className="w-24 absolute bottom-1/4 left-1/3 animate-pulse delay-1000" />
 
       <div className="container mx-auto px-6 text-center relative z-10">
+        <div className="mb-6">
+          <span className="text-6xl animate-bounce inline-block">📚</span>
+          <span className="text-6xl animate-bounce inline-block ml-4" style={{animationDelay: '0.2s'}}>🌟</span>
+          <span className="text-6xl animate-bounce inline-block ml-4" style={{animationDelay: '0.4s'}}>🎭</span>
+        </div>
         <h1 className="text-5xl md:text-7xl font-extrabold text-white text-shadow mb-4" style={{textShadow: '3px 3px 0px rgba(0,0,0,0.1)'}}>
-          Um Mundo de Aventuras!
+          🌈 Histórias da Aninha! 🌈
         </h1>
-        <p className="text-lg md:text-xl text-slate-600 font-semibold max-w-3xl mx-auto mb-10">
-          Descubra nossa coleção de livros de histórias encantadoras, criadas com amor para despertar a imaginação.
+        <p className="text-lg md:text-2xl text-white font-bold max-w-4xl mx-auto mb-10 drop-shadow-lg">
+          🎥 Vídeos mágicos cheios de aventuras para crianças de 3 a 6 anos! 
+          <br />
+          <span className="text-yellow-300">Diversão, aprendizado e muita alegria! ✨</span>
         </p>
         <a 
           href="#stories" 
-          className="bg-yellow-400 text-slate-800 font-bold py-4 px-10 rounded-full text-xl shadow-xl hover:bg-yellow-300 transform hover:scale-110 hover:animate-bounce transition-all duration-300 ease-in-out"
+          className="bg-gradient-to-r from-yellow-400 to-orange-400 text-white font-bold py-5 px-12 rounded-full text-2xl shadow-xl hover:shadow-2xl transform hover:scale-110 transition-all duration-300 ease-in-out border-4 border-white"
         >
-          Começar a Ler!
+          🎬 Ver os Vídeos! 🎪
         </a>
       </div>
       <div className="absolute bottom-0 left-0 right-0 w-full h-24">

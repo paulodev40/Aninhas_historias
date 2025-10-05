@@ -10,18 +10,19 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" className="flex items-center gap-2 group cursor-pointer">
+        <a href="#" className="flex items-center gap-3 group cursor-pointer">
           <div className="relative">
-            <StarIcon className="w-10 h-10 text-yellow-400" />
-            <StarIcon className="w-5 h-5 text-yellow-300 absolute -top-1 -right-1" />
+            <span className="text-4xl animate-bounce">👧</span>
+            <StarIcon className="w-6 h-6 text-yellow-400 absolute -top-1 -right-1 animate-pulse" />
           </div>
-          <span className="text-2xl font-bold text-orange-500 group-hover:scale-105 transition-transform duration-300" style={{fontFamily: "'Baloo 2', cursive"}}>
-            Aninha e suas historinhas
+          <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300" style={{fontFamily: "'Baloo 2', cursive"}}>
+            📚 Aninha e suas Historinhas 🎬
           </span>
         </a>
-        <nav>
-          <a href="#stories" className="text-slate-600 hover:text-orange-500 transition-colors font-bold text-lg">
-            Ver Histórias
+        <nav className="flex items-center gap-4">
+          <span className="hidden md:block text-lg">👶 3-6 anos</span>
+          <a href="#stories" className="bg-gradient-to-r from-orange-400 to-pink-400 text-white px-4 py-2 rounded-full hover:shadow-lg transition-all font-bold text-lg transform hover:scale-105">
+            🎭 Ver Histórias
           </a>
         </nav>
       </div>
